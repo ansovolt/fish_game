@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rock-obstacle",
+    "texture": "75065ca7-0678-4e02-afc5-d60d01bab37c",
+    "atlas": "",
+    "rect": [
+      0,
+      107,
+      800,
+      693
+    ],
+    "offset": [
+      0,
+      -53.5
+    ],
+    "originalSize": [
+      800,
+      800
+    ]
+  }
+}

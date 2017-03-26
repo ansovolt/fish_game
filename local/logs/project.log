@@ -1,0 +1,218 @@
+2017-03-26T01:27:58.981Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-26T01:27:59.005Z - normal: checking language setting...
+2017-03-26T01:27:59.006Z - normal: Language: en
+2017-03-26T01:27:59.749Z - success: protocol editor-framework registered
+2017-03-26T01:27:59.749Z - success: protocol app registered
+2017-03-26T01:27:59.750Z - success: protocol theme registered
+2017-03-26T01:27:59.750Z - success: protocol profile registered
+2017-03-26T01:27:59.750Z - success: protocol packages registered
+2017-03-26T01:27:59.753Z - success: protocol unpack registerred
+2017-03-26T01:27:59.753Z - success: protocol disable-commonjs registerred
+2017-03-26T01:28:02.749Z - normal: failed to connect login server due to request timeout
+2017-03-26T01:28:02.750Z - normal: Check project /Users/admin/ansosoft/games/dolphin_game
+2017-03-26T01:28:02.752Z - normal: Initializing Cocos2d
+2017-03-26T01:28:02.924Z - normal: Initializing Asset Database
+2017-03-26T01:28:02.970Z - success: protocol uuid registerred
+2017-03-26T01:28:02.971Z - success: protocol db registerred
+2017-03-26T01:28:02.971Z - success: protocol thumbnail registerred
+2017-03-26T01:28:02.971Z - normal: Loading editor/builtin packages
+2017-03-26T01:28:03.096Z - success: assets loaded
+2017-03-26T01:28:03.101Z - success: builder loaded
+2017-03-26T01:28:03.107Z - success: hierarchy loaded
+2017-03-26T01:28:03.112Z - success: inspector loaded
+2017-03-26T01:28:03.113Z - success: keystore loaded
+2017-03-26T01:28:03.121Z - success: node-library loaded
+2017-03-26T01:28:03.126Z - success: preferences loaded
+2017-03-26T01:28:03.143Z - success: project-importer loaded
+2017-03-26T01:28:03.149Z - success: project-settings loaded
+2017-03-26T01:28:03.174Z - success: ui-kit loaded
+2017-03-26T01:28:03.183Z - success: ui-grid loaded
+2017-03-26T01:28:03.190Z - success: scene loaded
+2017-03-26T01:28:03.192Z - success: sprite-editor loaded
+2017-03-26T01:28:03.356Z - success: store loaded
+2017-03-26T01:28:03.362Z - success: timeline loaded
+2017-03-26T01:28:03.362Z - normal: Loading builtin packages
+2017-03-26T01:28:03.380Z - success: anysdk loaded
+2017-03-26T01:28:03.394Z - success: asset-db-debugger loaded
+2017-03-26T01:28:03.396Z - success: code-editor loaded
+2017-03-26T01:28:03.396Z - success: color-picker loaded
+2017-03-26T01:28:03.402Z - success: console loaded
+2017-03-26T01:28:03.407Z - success: package-manager loaded
+2017-03-26T01:28:03.412Z - success: tester loaded
+2017-03-26T01:28:03.416Z - success: ui-kit-preview-extra loaded
+2017-03-26T01:28:03.419Z - success: ui-kit-preview loaded
+2017-03-26T01:28:03.424Z - success: ui-tree loaded
+2017-03-26T01:28:03.475Z - normal: Initializing project /Users/admin/ansosoft/games/dolphin_game
+2017-03-26T01:28:03.501Z - normal: Loading packages
+2017-03-26T01:28:03.506Z - normal: Watching packages
+2017-03-26T01:28:03.532Z - normal: Run Application
+2017-03-26T01:28:04.699Z - success: preview server running at http://localhost:7456
+2017-03-26T01:28:06.987Z - error: TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:7:11)
+    at Object.extname (path.js:1433:5)
+    at new CodeEditor (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/builtin/code-editor/panel/editor.js:74:27)
+    at HTMLDocument.document.addEventListener (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/builtin/code-editor/panel/page.js:162:18)
+2017-03-26T01:28:09.392Z - normal: 1.4.0
+2017-03-26T01:28:30.497Z - warn: Failed to send ipc message scene:query-animation-node to panel scene, panel not found
+2017-03-26T01:30:05.614Z - warn: Failed to set property Fish<Star> to [object Object] at __scriptAsset, TypeError: Cannot set property __scriptAsset of #<cc_Component> which has only a getter
+    at setAsset (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:804)
+    at setByUuid (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:1014)
+    at _setPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:1899)
+    at setDeepPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:4019)
+    at Object.Editor.setPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:5516)
+    at /Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:13984
+    at Object.setProperty (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:14219)
+    at editor-scene.scene:set-property (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:9183)
+    at Object.Panel._dispatch (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2294)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5065)
+2017-03-26T01:30:05.636Z - warn: Failed to set property Fish<Star> to [object Object] at __scriptAsset, TypeError: Cannot set property __scriptAsset of #<cc_Component> which has only a getter
+    at setAsset (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:804)
+    at setByUuid (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:1014)
+    at _setPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:1899)
+    at setDeepPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:4019)
+    at Object.Editor.setPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:5516)
+    at /Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:13984
+    at Object.setProperty (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:14219)
+    at editor-scene.scene:set-property (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:9183)
+    at Object.Panel._dispatch (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2294)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5065)
+2017-03-26T01:30:05.636Z - warn: Failed to set property Fish<Star> to [object Object] at __scriptAsset, TypeError: Cannot set property __scriptAsset of #<cc_Component> which has only a getter
+    at setAsset (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:804)
+    at setByUuid (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:1014)
+    at _setPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:1899)
+    at setDeepPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:4019)
+    at Object.Editor.setPropertyByPath (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/set-property-by-path.js:1:5516)
+    at /Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:13984
+    at Object.setProperty (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:14219)
+    at editor-scene.scene:set-property (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:9183)
+    at Object.Panel._dispatch (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2294)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator 2.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5065)
+2017-03-26T01:30:23.757Z - error: TypeError: Cannot read property '_uuid' of null
+    at EventEmitter.<anonymous> (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/builtin/code-editor/panel/page.js:124:20)
+    at emitTwo (events.js:111:20)
+    at EventEmitter.emit (events.js:191:7)
+2017-03-26T01:30:54.329Z - error: TypeError: Cannot read property '_uuid' of null
+    at EventEmitter.<anonymous> (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/builtin/code-editor/panel/page.js:124:20)
+    at emitTwo (events.js:111:20)
+    at EventEmitter.emit (events.js:191:7)
+2017-03-26T01:31:01.655Z - normal: Simulator: WORKAREA WIDTH 2556.00, HEIGHT 1395.00
+2017-03-26T01:31:01.692Z - normal: Simulator: FRAME SCALE = 1.00
+2017-03-26T01:31:01.950Z - normal: Simulator: 
+2017-03-26T01:31:01.951Z - normal: Simulator: {
+2017-03-26T01:31:01.951Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
+2017-03-26T01:31:01.951Z - normal: Simulator: 	gl.supports_vertex_array_object: true
+2017-03-26T01:31:01.951Z - normal: Simulator: 	cocos2d.x.version: 1.4.0-lite
+2017-03-26T01:31:01.952Z - normal: Simulator: 	gl.vendor: ATI Technologies Inc.
+2017-03-26T01:31:01.952Z - normal: Simulator: 	gl.supports_PVRTC: false
+2017-03-26T01:31:01.952Z - normal: Simulator: 	gl.renderer: ATI Radeon HD 5750 OpenGL Engine
+2017-03-26T01:31:01.952Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
+2017-03-26T01:31:01.953Z - normal: Simulator: 	gl.max_texture_size: 16384
+2017-03-26T01:31:01.953Z - normal: Simulator: 	gl.supports_ETC1: false
+2017-03-26T01:31:01.960Z - normal: Simulator: 	gl.supports_BGRA8888: false
+2017-03-26T01:31:01.961Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
+2017-03-26T01:31:01.961Z - normal: Simulator: 	gl.max_texture_units: 16
+2017-03-26T01:31:01.961Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
+2017-03-26T01:31:01.962Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
+2017-03-26T01:31:01.962Z - normal: Simulator: 	gl.supports_NPOT: true
+2017-03-26T01:31:01.962Z - normal: Simulator: 	gl.version: 2.1 ATI-1.48.21
+2017-03-26T01:31:01.963Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
+2017-03-26T01:31:01.963Z - normal: Simulator: 	gl.supports_OES_depth24: false
+2017-03-26T01:31:01.963Z - normal: Simulator: }
+2017-03-26T01:31:01.964Z - normal: Simulator: 
+2017-03-26T01:31:01.964Z - normal: Simulator: 
+2017-03-26T01:31:01.964Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
+2017-03-26T01:31:01.988Z - normal: Simulator: Project Config:
+2017-03-26T01:31:01.989Z - normal: Simulator:     project dir: /Applications/CocosCreator 2.app/Contents/Resources/cocos2d-x/simulator/mac/Simulator.app/Contents/Resources/
+2017-03-26T01:31:01.990Z - normal: Simulator:     writable path: $(PROJDIR)/
+2017-03-26T01:31:01.991Z - normal: Simulator:     script file: $(PROJDIR)/main.js
+2017-03-26T01:31:01.992Z - normal: Simulator:     frame size: 960 x 640
+2017-03-26T01:31:01.992Z - normal: Simulator:     frame scale: 1.00
+2017-03-26T01:31:01.992Z - normal: Simulator:     show console: NO
+2017-03-26T01:31:01.993Z - normal: Simulator:     write debug log: NO ()
+2017-03-26T01:31:01.993Z - normal: Simulator:     listen: 
+2017-03-26T01:31:01.993Z - normal: Simulator:     debugger: none
+2017-03-26T01:31:01.994Z - normal: Simulator:     add searching path:
+2017-03-26T01:31:01.994Z - normal: Simulator: 
+2017-03-26T01:31:01.994Z - normal: Simulator: 
+2017-03-26T01:31:01.995Z - normal: Simulator: 
+2017-03-26T01:31:01.995Z - normal: Simulator: ------------------------------------------------
+2017-03-26T01:31:01.995Z - normal: Simulator: LOAD Js FILE: main.js
+2017-03-26T01:31:01.996Z - normal: Simulator: ------------------------------------------------
+2017-03-26T01:31:02.861Z - normal: Simulator: Cocos2d-JS v3.14
+2017-03-26T01:31:03.024Z - normal: Simulator: iShow!
+2017-03-26T01:31:03.469Z - normal: Simulator: cocos2d: QuadCommand: resizing index size from [-1] to [2560]
+2017-03-26T01:31:08.214Z - normal: Simulator: I/AudioEngine-inl.mm (260): OpenAL was initialized successfully!
+2017-03-26T01:31:08.215Z - normal: Simulator: V/AudioCache (86): AudioCache() 0x7fa62d3e9828, id=1
+2017-03-26T01:31:08.215Z - normal: Simulator: V/AudioCache (144): readDataTask, cache id=1
+2017-03-26T01:31:08.216Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2400
+2017-03-26T01:31:08.216Z - normal: Simulator: V/AudioCache (259): pcm buffer was loaded successfully, total frames: 55453, total read frames: 55453, adjust frames: 0, remainingFrames: 0
+2017-03-26T01:31:08.227Z - error: Simulator: TypeError: fish is null
+    at a: "fish.setPosition(this.getNewFishPosition())" (assets/scripts/Game.js:131:12)
+2017-03-26T01:31:12.107Z - normal: Simulator: V/AudioCache (86): AudioCache() 0x7fa62d3f1458, id=2
+2017-03-26T01:31:12.107Z - normal: Simulator: V/AudioCache (144): readDataTask, cache id=2
+2017-03-26T01:31:12.107Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2401
+2017-03-26T01:31:12.108Z - normal: Simulator: V/AudioCache (259): pcm buffer was loaded successfully, total frames: 8117, total read frames: 8117, adjust frames: 0, remainingFrames: 0
+2017-03-26T01:31:12.108Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa62d3e96d0), id=1
+2017-03-26T01:31:12.108Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=1
+2017-03-26T01:31:12.109Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:12.109Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:12.109Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=1
+2017-03-26T01:31:12.110Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa62d3f1300), id=2
+2017-03-26T01:31:12.110Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=2
+2017-03-26T01:31:12.110Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:12.111Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:12.111Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=2
+2017-03-26T01:31:12.111Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2400
+2017-03-26T01:31:12.111Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa63003f640), id=3
+2017-03-26T01:31:12.112Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=3
+2017-03-26T01:31:12.112Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:12.112Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:12.112Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=3
+2017-03-26T01:31:12.113Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2400
+2017-03-26T01:31:12.113Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa62d4be630), id=4
+2017-03-26T01:31:12.113Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=4
+2017-03-26T01:31:12.114Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:12.114Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:12.114Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=4
+2017-03-26T01:31:12.114Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2400
+2017-03-26T01:31:12.115Z - error: Simulator: TypeError: fish is null
+    at a: "fish.setPosition(this.getNewFishPosition())" (assets/scripts/Game.js:131:12)
+2017-03-26T01:31:19.614Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2401
+2017-03-26T01:31:19.614Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa62d4c36b0), id=6
+2017-03-26T01:31:19.615Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=6
+2017-03-26T01:31:19.615Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:19.615Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:19.616Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=6
+2017-03-26T01:31:19.616Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa630212510), id=5
+2017-03-26T01:31:19.616Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=5
+2017-03-26T01:31:19.616Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:19.617Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:19.617Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=5
+2017-03-26T01:31:19.617Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2400
+2017-03-26T01:31:19.618Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa630216690), id=7
+2017-03-26T01:31:19.618Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=7
+2017-03-26T01:31:19.618Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:19.618Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:19.619Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=7
+2017-03-26T01:31:19.619Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2400
+2017-03-26T01:31:19.619Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa630049150), id=8
+2017-03-26T01:31:19.619Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=8
+2017-03-26T01:31:19.620Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:19.620Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:19.620Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=8
+2017-03-26T01:31:19.621Z - normal: Simulator: V/AudioPlayer (147): AudioPlayer::play2d, _alSource: 2400
+2017-03-26T01:31:19.621Z - normal: Simulator: V/AudioPlayer (69): ~AudioPlayer() (0x7fa62b111c70), id=9
+2017-03-26T01:31:19.621Z - normal: Simulator: V/AudioPlayer (83): AudioPlayer::destroy begin, id=9
+2017-03-26T01:31:19.621Z - normal: Simulator: V/AudioPlayer (128): Before alSourceStop
+2017-03-26T01:31:19.621Z - normal: Simulator: V/AudioPlayer (130): Before alSourcei
+2017-03-26T01:31:19.622Z - normal: Simulator: V/AudioPlayer (136): AudioPlayer::destroy end, id=9
+2017-03-26T01:31:19.622Z - normal: Simulator: basic_object_finalize 0xd742910 ...
+2017-03-26T01:31:19.623Z - normal: Simulator: jsbindings: finalizing JS object 0xd742940 (WebSocket)
+2017-03-26T01:31:19.623Z - normal: Simulator: jsbindings: finalizing JS object 0xd742970 (SocketIO)
+2017-03-26T01:31:19.624Z - normal: Simulator: basic_object_finalize 0xd742a00 ...
+2017-03-26T01:31:19.624Z - normal: Simulator: basic_object_finalize 0xd742d00 ...
+2017-03-26T01:31:28.179Z - error: TypeError: Cannot read property 'aceEditor' of null
+    at _confirmClose (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/builtin/code-editor/panel/page.js:19:28)
+    at EventEmitter.ipcRenderer.on (file:///Applications/CocosCreator%202.app/Contents/Resources/app.asar/builtin/code-editor/panel/page.js:104:15)
+    at emitThree (events.js:121:20)
+    at EventEmitter.emit (events.js:194:7)

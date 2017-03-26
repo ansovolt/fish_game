@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d20523bf-43d3-47bd-8006-78bfab9701c4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "icy-rock-monster": {
+      "ver": "1.0.3",
+      "uuid": "4a472d63-562c-48e8-8b34-1767df674409",
+      "rawTextureUuid": "d20523bf-43d3-47bd-8006-78bfab9701c4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -56,
+      "trimX": 109,
+      "trimY": 112,
+      "width": 501,
+      "height": 587,
+      "rawWidth": 717,
+      "rawHeight": 699,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

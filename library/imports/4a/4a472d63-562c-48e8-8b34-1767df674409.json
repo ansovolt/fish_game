@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icy-rock-monster",
+    "texture": "d20523bf-43d3-47bd-8006-78bfab9701c4",
+    "atlas": "",
+    "rect": [
+      109,
+      112,
+      501,
+      587
+    ],
+    "offset": [
+      1,
+      -56
+    ],
+    "originalSize": [
+      717,
+      699
+    ]
+  }
+}

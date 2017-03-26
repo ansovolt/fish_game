@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rock-monster",
+    "texture": "3f758592-f39c-4bbb-99d4-332c8c857a4c",
+    "atlas": "",
+    "rect": [
+      133,
+      75,
+      235,
+      351
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      500,
+      500
+    ]
+  }
+}
