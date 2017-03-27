@@ -3,7 +3,7 @@ cc._RFpush(module, 'c10bbPdGYhDWaLoKLV38bHf', 'Player');
 // scripts/Player.js
 
 cc.Class({
-    "extends": cc.Component,
+    'extends': cc.Component,
 
     properties: {
 
@@ -18,7 +18,7 @@ cc.Class({
         accel: 0,
 
         jumpAudio: {
-            "default": null,
+            'default': null,
             url: cc.AudioClip
         }
     },
@@ -118,6 +118,8 @@ cc.Class({
     },
 
     getCenterPos: function getCenterPos() {
+
+        cc.log('player:getCenterPos');
         var centerPos = cc.p(this.node.x, this.node.y + this.node.height / 2);
         return centerPos;
     },

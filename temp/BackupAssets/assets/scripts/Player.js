@@ -117,6 +117,8 @@ cc.Class({
     },
 
     getCenterPos: function () {
+        
+        cc.log('player:getCenterPos');
         var centerPos = cc.p(this.node.x, this.node.y + this.node.height/2);
         return centerPos;
     },
