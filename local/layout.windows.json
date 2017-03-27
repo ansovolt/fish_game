@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 399,
-      "y": 213,
+      "x": 267,
+      "y": 123,
       "width": 1896,
       "height": 1087,
       "layout": {
@@ -93,31 +93,32 @@
       "panels": [
         "console",
         "inspector",
+        "hierarchy",
         "assets",
         "scene",
         "node-library",
-        "timeline",
-        "hierarchy"
+        "timeline"
       ]
     },
-    "window-1490491565967": {
+    "window-1490614835763": {
       "main": false,
       "url": "packages://code-editor/panel/index.html",
       "windowType": "simple",
-      "x": 922,
-      "y": 370,
+      "x": 811,
+      "y": 478,
       "width": 842,
       "height": 843,
       "layout": null,
       "panels": [
         "code-editor"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "code-editor": {
-      "x": 922,
-      "y": 370,
+      "x": 811,
+      "y": 478,
       "width": 842,
       "height": 843
     },
@@ -126,6 +127,12 @@
       "y": 447,
       "width": 500,
       "height": 522
+    },
+    "anysdk": {
+      "x": 772,
+      "y": 364,
+      "width": 1012,
+      "height": 688
     }
   }
 }

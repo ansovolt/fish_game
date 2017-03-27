@@ -1,23 +1,23 @@
 var Player = require('Player');
 var Background = require('Background');
 var ScoreFX = require('ScoreFX');
-var Star = require('Star');
 var Fish = require('Fish');
+var RockMonster = require('RockMonster');
 
 var Game = cc.Class({
     'extends': cc.Component,
 
     properties: {
 
-        starPrefab: {
-            'default': null,
-            type: cc.Prefab
-        },
         scoreFXPrefab: {
             'default': null,
             type: cc.Prefab
         },
         fishPrefab: {
+            'default': null,
+            type: cc.Prefab
+        },
+        rockMonsterPrefab: {
             'default': null,
             type: cc.Prefab
         },
@@ -78,10 +78,7 @@ var Game = cc.Class({
     onLoad: function onLoad() {
 
         this.groundY = this.ground.y + this.ground.height / 2;
-
-        // store last star's x position
-        this.currentStar = null;
-        this.currentStarX = 0;
+        this.groundX = this.node.x - this.node.width + this.player.node.width; //- cc.Canvas.width/2 + 20;
 
         this.timer = 0;
         this.starDuration = 0;
@@ -92,10 +89,6 @@ var Game = cc.Class({
         // initialize control hint
         var hintText = cc.sys.isMobile ? this.touchHint : this.keyboardHint;
         this.controlHintLabel.string = hintText;
-
-        // initialize star and score pool
-        this.starPool = new cc.NodePool('Star');
-        this.scorePool = new cc.NodePool('ScoreFX');
     },
 
     onStartGame: function onStartGame() {
@@ -107,98 +100,88 @@ var Game = cc.Class({
         this.btnNode.setPositionX(3000);
         this.gameOverNode.active = false;
         // reset player position and move speed
-        this.player.startMoveAt(cc.p(0, this.groundY));
-        // spawn star
-        this.spawnNewStar();
+        this.player.startMoveAt(cc.p(this.groundX, this.groundY));
+
+        console.log(this.groundX + ',' + this.groundY);
+
         cc.audioEngine.playEffect(this.splash1Audio, false);
 
         this.initScene();
-
-        this.bg.startMoving();
     },
 
     initScene: function initScene() {
 
+        cc.log("initScene");
+
+        //start game timer
+        this.startTimer();
+
+        //reset background position
+        this.bg.resetPosition();
+
+        this.player.resetPosition();
+
         //place fish
+        var lastFishX = 0;
         this.fishAr = [];
-        for (var i = 0; i < 1; i++) {
+        for (var i = 0; i < 20; i++) {
             var fish = cc.instantiate(this.fishPrefab);
-            fish.setPosition(this.getNewFishPosition());
+            var newFishPosition = this.getNewFishPosition(lastFishX);
+            lastFishX = newFishPosition.x;
+            fish.setPosition(newFishPosition);
             this.fishAr.push(fish);
             this.node.addChild(fish);
             fish.getComponent('Fish').init(this);
+            fish.getComponent('Fish').startMoving();
         }
 
         //place rocks
-    },
+        var lastRockMonsterX = 0;
+        this.rockMonsterAr = [];
+        for (var j = 0; j < 20; j++) {
+            var rm = cc.instantiate(this.rockMonsterPrefab);
+            var newPosition = this.getNewRockMonsterPosition(lastRockMonsterX);
+            lastRockMonsterX = newPosition.x;
+            rm.setPosition(newPosition);
+            this.rockMonsterAr.push(rm);
+            this.node.addChild(rm);
+            rm.getComponent('RockMonster').init(this);
+            rm.getComponent('RockMonster').startMoving();
+        }
 
-    spawnNewStar: function spawnNewStar() {
-        // var newStar = null;
-
-        // if (this.starPool.size() > 0) {
-        //     newStar = this.starPool.get(this); // this will be passed to Star's reuse method
-        // } else {
-        //     newStar = cc.instantiate(this.starPrefab);
-        // }
-
-        // this.node.addChild(newStar);
-
-        // newStar.setPosition(this.getNewStarPosition());
-        // // pass Game instance to star
-        // newStar.getComponent('Star').init(this);
-        // start star timer and store star reference
-        this.startTimer();
-        //this.currentStar = newStar;
-    },
-
-    despawnStar: function despawnStar(star) {
-        this.starPool.put(star);
-        this.spawnNewStar();
+        this.bg.startMoving();
     },
 
     startTimer: function startTimer() {
-
-        this.starDuration = this.minStarDuration + cc.random0To1() * (this.maxStarDuration - this.minStarDuration);
+        //this.starDuration = this.minStarDuration + cc.random0To1() * (this.maxStarDuration - this.minStarDuration);
+        this.starDuration = 5;
         this.timer = 0;
     },
 
-    getNewStarPosition: function getNewStarPosition() {
-        // if there's no star, set a random x pos
-        // if (!this.currentStar) {
-        //     this.currentStarX = cc.randomMinus1To1() * this.node.width/2;
-        // }
-        // var randX = 0;
-
-        // var randY = this.groundY + cc.random0To1() * this.player.jumpHeight + 50;
-
-        // var maxX = this.node.width/2;
-        // if (this.currentStarX >= 0) {
-        //     randX = -cc.random0To1() * maxX;
-        // } else {
-        //     randX = cc.random0To1() * maxX;
-        // }
-        // this.currentStarX = randX;
-
-        // return cc.p(randX, randY);
+    despawnFish: function despawnFish(fish) {
+        //this.scorePool.put(scoreFX);
     },
 
-    getNewFishPosition: function getNewFishPosition() {
+    getNewFishPosition: function getNewFishPosition(fromX) {
 
-        var randX = 0;
-        var randY = this.groundY + cc.random0To1() * this.player.jumpHeight + 50;
+        var randX = fromX + 150 + cc.random0To1() * 200;
+        var randY = this.groundY + cc.random0To1() * 100;
 
-        // var maxX = this.node.width/2;
-        // if (this.currentStarX >= 0) {
-        //     randX = -cc.random0To1() * maxX;
-        // } else {
-        //     randX = cc.random0To1() * maxX;
-        // }
-        // this.currentStarX = randX;
+        return cc.p(randX, randY);
+    },
+
+    getNewRockMonsterPosition: function getNewRockMonsterPosition(fromX) {
+
+        var randX = fromX + 350 + cc.random0To1() * 300;
+        var randY = this.ground.y + 100; //- this.ground.hight / 2;
 
         return cc.p(randX, randY);
     },
 
     gainScore: function gainScore(pos) {
+
+        cc.log('gainScore');
+
         this.score += 1;
 
         this.scoreDisplay.string = 'Score: ' + this.score.toString();
@@ -241,17 +224,35 @@ var Game = cc.Class({
             return;
         }
         this.timer += dt;
+
+        //cc.log(this.bg.getX()+','+this.bg.getY());
     },
 
     gameOver: function gameOver() {
+
+        cc.log('gameOver');
+
         this.gameOverNode.active = true;
         this.player.enabled = false;
         this.player.stopMove();
+        //this.player.hide();
+        //this.player.destroy();
 
         for (var i = 0; i < this.fishAr.length; i++) {
-            this.fishAr[i].destroy;
+            var fish = this.fishAr[i];
+            this.node.removeChild(fish);
+            fish.getComponent('Fish').stopMoving();
+            fish.destroy();
         }
-        this.fishAr = undefined;
+        this.fishAr = [];
+
+        for (var j = 0; j < this.rockMonsterAr.length; j++) {
+            var rm = this.rockMonsterAr[j];
+            this.node.removeChild(rm);
+            rm.getComponent('RockMonster').stopMoving();
+            rm.destroy();
+        }
+        this.rockMonsterAr = [];
 
         this.isRunning = false;
         this.btnNode.setPositionX(0);

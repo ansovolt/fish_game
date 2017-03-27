@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Fish",
+    "_name": "RockMonster",
     "_objFlags": 0,
     "_rawFiles": null,
     "data": {
@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Fish",
+    "_name": "RockMonster",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -36,11 +36,11 @@
     "_rotationX": 0,
     "_rotationY": 0,
     "_scaleX": 0.97,
-    "_scaleY": 0.97,
+    "_scaleY": 4.81,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 594,
-      "y": 284
+      "x": 599,
+      "y": 300
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -72,7 +72,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "fcb8b0e3-a19d-4a5c-b769-4f397a6f7ea4"
+      "__uuid__": "07466a73-4445-40eb-9c3e-7f29affe034e"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -90,7 +90,7 @@
     "_atlas": null
   },
   {
-    "__type__": "642ef5bpGdB+KonbeesiNA+",
+    "__type__": "cc71bzS5WBOO7gp+UNpF2ke",
     "_name": "",
     "_objFlags": 0,
     "node": {

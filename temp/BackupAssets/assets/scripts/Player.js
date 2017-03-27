@@ -113,6 +113,7 @@ cc.Class({
     playJumpSound: function () {
       
         cc.audioEngine.playEffect(this.jumpAudio, false);
+        
     },
 
     getCenterPos: function () {
@@ -125,6 +126,10 @@ cc.Class({
         this.xSpeed = 0;
         this.node.setPosition(pos);
         this.node.runAction(this.setJumpAction());
+    },
+
+    resetPosition: function (){
+        
     },
 
     stopMove: function () {

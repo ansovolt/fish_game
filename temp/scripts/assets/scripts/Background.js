@@ -32,6 +32,17 @@ cc.Class({
         this.moving = false;
     },
 
+    getX: function getX() {
+        return this.node.x;
+    },
+    getY: function getY() {
+        return this.node.y;
+    },
+
+    resetPosition: function resetPosition() {
+        this.node.x = 2745;
+    },
+
     // called every frame, uncomment this function to activate update callback
     update: function update(dt) {
         if (this.moving) {

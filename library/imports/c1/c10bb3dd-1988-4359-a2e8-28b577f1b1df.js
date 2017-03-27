@@ -125,6 +125,8 @@ cc.Class({
         this.node.runAction(this.setJumpAction());
     },
 
+    resetPosition: function resetPosition() {},
+
     stopMove: function stopMove() {
         this.node.stopAllActions();
     },

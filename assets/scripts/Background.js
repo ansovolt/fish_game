@@ -27,6 +27,17 @@ cc.Class({
     stopMoving: function () {
         this.moving = false;
     },
+    
+    getX: function(){
+        return this.node.x;
+    },
+    getY: function(){
+        return this.node.y;
+    },
+    
+    resetPosition: function (){
+        this.node.x = 2745;  
+    },
 
     // called every frame, uncomment this function to activate update callback
     update: function (dt) {

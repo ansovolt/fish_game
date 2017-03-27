@@ -2,21 +2,25 @@
 cc._RFpush(module, '642ef5bpGdB+KonbeesiNA+', 'Fish');
 // scripts/Fish.js
 
+
+
 cc.Class({
-    "extends": cc.Component,
+    'extends': cc.Component,
 
     properties: {
 
         pickRadius: 0,
 
         game: {
-            "default": null,
+            'default': null,
             serializable: false
         }
     },
 
     onLoad: function onLoad() {
         this.enabled = false;
+        this.xSpeed = 100;
+        this.moving = false;
     },
 
     // use this for initialization
@@ -39,11 +43,13 @@ cc.Class({
     },
 
     onPicked: function onPicked() {
+
+        cc.log('finsh:onPicked');
         var pos = this.node.getPosition();
 
         this.game.gainScore(pos);
 
-        this.game.despawnStar(this.node);
+        this.game.despawnFish(this.node);
     },
 
     // called every frame
@@ -55,9 +61,31 @@ cc.Class({
             return;
         }
 
-        var opacityRatio = 1 - this.game.timer / this.game.starDuration;
-        var minOpacity = 50;
-        this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));
+        // var opacityRatio = 1 - this.game.timer/this.game.starDuration;
+        // var minOpacity = 50;
+        // this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));
+
+        if (this.moving) {
+            this.node.x -= this.xSpeed * dt;
+        }
+    },
+    startMoving: function startMoving() {
+        this.moving = true;
+    },
+
+    stopMoving: function stopMoving() {
+        this.moving = false;
+    },
+
+    getX: function getX() {
+        return this.node.x;
+    },
+    getY: function getY() {
+        return this.node.y;
+    },
+
+    resetPosition: function resetPosition() {
+        this.node.x = 2745;
     }
 });
 

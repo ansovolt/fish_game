@@ -39,8 +39,8 @@
     "_scaleY": 0.97,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 594,
-      "y": 284
+      "x": 599,
+      "y": 300
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -105,7 +105,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "a139be8c-a1aa-44ba-98fb-fd5d00253513"
+      "__uuid__": "8f563c1a-2e71-4913-99dd-c58e3f852d26"
     },
     "fileId": "c7416E9DwpAkpbp65bqMWA5",
     "sync": false
